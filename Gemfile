@@ -67,3 +67,9 @@ gem "pg", "~> 1.5", ">= 1.5.9"
 
 # SERIALIZER
 gem "active_model_serializers", "~> 0.10.2"
+
+# PAGINAÇÃO
+gem "pagy", "~> 9.1"
+
+# RANSACK
+gem "ransack", "~> 1.7"
