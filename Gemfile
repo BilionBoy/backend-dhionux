@@ -62,4 +62,8 @@ group :test do
   gem "selenium-webdriver"
 end
 
+# POSTGRES
 gem "pg", "~> 1.5", ">= 1.5.9"
+
+# SERIALIZER
+gem "active_model_serializers", "~> 0.10.2"

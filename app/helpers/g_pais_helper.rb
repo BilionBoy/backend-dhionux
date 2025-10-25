@@ -1,0 +1,2 @@
+module GPaisHelper
+end
