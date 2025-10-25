@@ -10,9 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_10_25_210410) do
+ActiveRecord::Schema[7.2].define(version: 2025_10_25_211526) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "g_estados", force: :cascade do |t|
+    t.string "nome_fantasia"
+    t.string "sigla"
+    t.bigint "g_pais_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["g_pais_id"], name: "index_g_estados_on_g_pais_id"
+  end
 
   create_table "g_paises", force: :cascade do |t|
     t.string "descricao"
@@ -20,4 +29,6 @@ ActiveRecord::Schema[7.2].define(version: 2025_10_25_210410) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_foreign_key "g_estados", "g_paises"
 end

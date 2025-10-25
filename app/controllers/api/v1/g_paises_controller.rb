@@ -2,7 +2,7 @@
 
 module Api
   module V1
-    class GPaisController < ApplicationController
+    class GPaisesController < ApplicationController
       before_action :set_g_pais, only: [ :show, :update, :destroy ]
 
       def index
@@ -45,7 +45,7 @@ module Api
       end
 
       def g_pais_params
-        params.require(:g_pais).permit(descricao, sigla)
+        params.require(:g_pais).permit(:descricao, :sigla)
       end
     end
   end
