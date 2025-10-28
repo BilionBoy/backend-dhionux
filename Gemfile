@@ -72,4 +72,4 @@ gem "active_model_serializers", "~> 0.10.2"
 gem "pagy", "~> 9.1"
 
 # RANSACK
-gem "ransack", "~> 1.7"
+gem "ransack"
