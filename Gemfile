@@ -63,7 +63,7 @@ group :test do
 end
 
 # POSTGRES
-gem "pg", "~> 1.5", ">= 1.5.9"
+gem "pg", "~> 1.6"
 
 # SERIALIZER
 gem "active_model_serializers", "~> 0.10.2"
